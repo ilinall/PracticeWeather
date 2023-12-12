@@ -27,7 +27,7 @@ async function checkWeather(city) {
     document.querySelector(".temp").innerHTML =
       Math.round(data.main.temp) + "&#8451";
     document.querySelector(".humidity").innerHTML = data.main.humidity + "%";
-    document.querySelector(".wind").innerHTML = data.wind.speed + " km/h";
+    document.querySelector(".wind").innerHTML = data.wind.speed + " км/ч";
 
     if (data.weather[0].main == "Clear") {
       weatherIcon.className = "fa-solid fa-sun";
